@@ -1,0 +1,52 @@
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    color: #000000;
+    position: relative;
+  
+    .loading {
+      height: 100%;
+      width: 100%;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+  
+      .follow {
+        position: absolute;
+        background: linear-gradient(112.1deg, #d45656 11.4%, #0aaad6 70.2%);
+        height: 2px;
+        width: 0;
+        left: 0;
+        z-index: 2;
+      }
+  
+      .progress-bar {
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        height: 2px;
+        width: 0;
+        transition: 0.4s ease-out;
+  
+        &.hide {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .content {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #000000;
+      padding: auto;
+      z-index: 2;
+      overflow: hidden;
+      color: #fff;
+    }
+  }
