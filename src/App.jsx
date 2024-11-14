@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Header from './components/header/Header';
 
 import './App.css'
 
@@ -8,18 +9,19 @@ function App() {
   const [loading, setLoading] = useState(true);
   return (
     <>
-    {loading ? (
+    {/* {loading ? (
       <Preloader setLoading={setLoading} />
     ) : (
-    <>
+    <> */}
+    {/* <Header/> */}
       <div className="w-full h-screen flex justify-center items-center overflow-hidden">
         <h1 className="text-3xl lg:text-5xl text-blackPreloading">
               Welcome
         </h1>
       </div>
     </>
-    )}
-    </>
+    // )}
+    // </>
   )
 }
 

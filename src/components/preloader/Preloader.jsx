@@ -30,9 +30,9 @@ const Preloader = ({ setLoading }) => {
         .to(".follow", {
           height: "100%",
           ease: Expo.easeInOut,
-          duration: 0.7,
+          duration: 0.3,
         })
-        .to(".content", { width: "100%", ease: Expo.easeInOut, duration: 3 });
+        .to(".content", { width: "100%", ease: Expo.easeInOut, duration: 1 });
         
       if (!t1.isActive()) {
         await setLoading(false);
@@ -47,9 +47,12 @@ const Preloader = ({ setLoading }) => {
             className="progress-bar hide"
             id="progress-bar"
             style={{ width: counter + "%" }}
-          >{counter}</div>
+          >
+            
+          </div>
+          <div className="text-5xl text-white">{counter}%</div>
         </div>
-        <div className="content">kjhkjhkjhkjhkj</div>
+        <div className="content"></div>
       </div>
     );
   };

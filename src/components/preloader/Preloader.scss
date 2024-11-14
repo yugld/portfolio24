@@ -1,13 +1,13 @@
 .app-container {
     width: 100vw;
     height: 100vh;
-    color: #000000;
+    color: #e21414;
     position: relative;
   
     .loading {
       height: 100%;
       width: 100%;
-      background-color: #000000;
+      background-color: #ebee2d;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -16,7 +16,7 @@
   
       .follow {
         position: absolute;
-        background: linear-gradient(112.1deg, #d45656 11.4%, #0aaad6 70.2%);
+        background: linear-gradient(112.1deg, #ffffff 11.4%, #78d8f3 70.2%);
         height: 2px;
         width: 0;
         left: 0;
@@ -27,6 +27,7 @@
         position: absolute;
         left: 0;
         background-color: #fff;
+        color:#fff;
         height: 2px;
         width: 0;
         transition: 0.4s ease-out;
@@ -43,10 +44,10 @@
       position: absolute;
       left: 0;
       top: 0;
-      background-color: #000000;
+      background-color: #ffffff;
       padding: auto;
       z-index: 2;
       overflow: hidden;
-      color: #fff;
+      color: #24a6da;
     }
   }
